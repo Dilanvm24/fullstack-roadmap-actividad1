@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - registrate con nosotros </title>
+
+    <style>
+           form{
+        width: 300px;
+      margin: 0 auto;
+      background: rgb(218, 167, 167);
+      padding: 20px;
+      border-radius: 8px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div>
+
+         <form>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"
+           required
+           maxlength="40"
+           pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"
+           title="Solo se permiten letras (máx. 40 caracteres)">
+    <br>
+
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido"
+           required
+           maxlength="40"
+           pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"
+           title="Solo se permiten letras (máx. 40 caracteres)">
+    <br>
+
+    <label for="telefono">Teléfono:</label><br>
+    <input type="tel" id="telefono" name="telefono"
+           pattern="[0-9]+"
+              maxlength="12"
+           title="Solo se permiten números">
+    <br>
+
+    <label for="fecha">Fecha de nacimiento:</label><br>
+    <input type="date" id="fecha" name="fecha">
+    <br>
+
+    
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="email" id="correo" name="correo"
+           required
+           title="Introduce un correo electrónico válido">
+    <br>
+
+    <label for="linkedin">URL de LinkedIn:</label><br>
+    <input type="url" id="linkedin" name="linkedin"
+           placeholder="https://www.linkedin.com/in/tu-perfil"
+           title="Introduce una URL válida">
+    <br>
+
+    <label>Género:</label><br>
+    <input type="radio" id="masculino" name="genero" value="Masculino" required>
+    <label for="masculino">Masculino</label><br>
+
+    <input type="radio" id="femenino" name="genero" value="Femenino">
+    <label for="femenino">Femenino</label>
+    <br>
+
+  
+    <button type="submit">Enviar</button>
+    <button type="reset">Cancelar</button>
+  </form>
+
+    </div>
+
+</body>
+</html>

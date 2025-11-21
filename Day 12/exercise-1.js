@@ -5,8 +5,6 @@ let person = {
     profession: "software developer",
 };
 
-let x = 30;
-
 function getPropertyNames(person) {
   for (const key in person) {
     console.log(key);
